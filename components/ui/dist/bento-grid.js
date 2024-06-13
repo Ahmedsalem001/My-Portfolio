@@ -7,10 +7,10 @@ var io5_1 = require("react-icons/io5");
 // Also install this npm i --save-dev @types/react-lottie
 var react_lottie_1 = require("react-lottie");
 var cn_1 = require("@/utils/cn");
-var Gradiantbg_1 = require("./Gradiantbg");
 var GridGlobe_1 = require("./GridGlobe");
 var confetti_json_1 = require("@/components/data/confetti.json");
 var MagicButton_1 = require("./MagicButton");
+var GradiantBg_1 = require("./GradiantBg");
 exports.BentoGrid = function (_a) {
     var className = _a.className, children = _a.children;
     return (React.createElement("div", { className: cn_1.cn(
@@ -54,7 +54,7 @@ exports.BentoGridItem = function (_a) {
                 className: "object-cover object-center w-full h-full" }))),
             id === 6 && (
             // add background animation , remove the p tag
-            React.createElement(Gradiantbg_1.BackgroundGradientAnimation, null,
+            React.createElement(GradiantBg_1.BackgroundGradientAnimation, null,
                 React.createElement("div", { className: "absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl" }))),
             React.createElement("div", { className: cn_1.cn(titleClassName, "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10") },
                 React.createElement("div", { className: "font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10" }, description),
