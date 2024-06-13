@@ -7,7 +7,6 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/utils/cn";
 
-
 import GridGlobe from "./GridGlobe";
 import animationData from "@/components/data/confetti.json";
 import MagicButton from "./MagicButton";
@@ -72,7 +71,7 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
     const reset = () => setCopied(false);
-    setTimeout( reset , 5000);
+    setTimeout(reset, 5000);
   };
 
   return (
