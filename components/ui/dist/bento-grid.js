@@ -13,9 +13,7 @@ var MagicButton_1 = require("./MagicButton");
 var GradiantBg_1 = require("./GradiantBg");
 exports.BentoGrid = function (_a) {
     var className = _a.className, children = _a.children;
-    return (React.createElement("div", { className: cn_1.cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto", className) }, children));
+    return (React.createElement("div", { className: cn_1.cn("grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto", className) }, children));
 };
 exports.BentoGridItem = function (_a) {
     var className = _a.className, id = _a.id, title = _a.title, description = _a.description, 
