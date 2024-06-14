@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
-      <div className="w-full absolute left-0 bottom-0 min-h-96 overflow-hidden">
+      <div className="w-full absolute left-0 bottom-0 min-h-96 overflow-hidden pointer-events-none">
         <img
           src="/footergrid.svg"
           alt="grid"
@@ -22,7 +22,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:ahmedsalem7dev@gmail.coom">
+        <a href="mailto:ahmedsalem7dev@gmail.coom" className="mt-7">
           <MagicButton
             icon={<FaLocationArrow />}
             position="right"
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6 mt-3">
           {socialMedia.map((profile) => (
             <a target="_blank" href={profile.link} key={profile.id}>
-            <div  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 bg-opacity-75 bg-black-300 rounded-lg border border-black-300">
+            <div  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 bg-opacity-75 bg-black-300 rounded-lg border border-black-300 -z">
               <img src={profile.img} alt={profile.img} width={20} height={20}/>
               </div>
             </a>
