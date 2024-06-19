@@ -211,6 +211,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://linkedin.com/in/ahmed-salem-412aa3271"
+    link: "https://www.linkedin.com/in/ahmed-salem-dev-266011272"
   },
 ];
